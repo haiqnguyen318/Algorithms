@@ -19,11 +19,11 @@ public class AlmostSortedIntervals {
     }
     
     public static void main(String[] args) {
-        In in = new In("input04.txt");
-        int N = in.readInt();
+        Scanner in = new Scanner(System.in);
+        int N = in.nextInt();
         int[] ar = new int[N];
         for (int k = 0; k < N; k++) {
-            ar[k] = in.readInt();
+            ar[k] = in.nextInt();
         }
         System.out.println(count(ar));
         
